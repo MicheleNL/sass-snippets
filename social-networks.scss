@@ -1,10 +1,10 @@
 // add social networks here:
 $map: (
-	twitter: icon-twitter,
-	facebook: icon-facebook,
-	google-plus: icon-google-plus,
-	youtube:  icon-youtube,
-	linkedin: icon-linkedin,
+	twitter:	icon-twitter,
+	facebook	icon-facebook,
+	google-plus: 	icon-google-plus,
+	youtube:  	icon-youtube,
+	linkedin: 	icon-linkedin,
 );
 
 // loop through map items and assign icon
@@ -17,8 +17,8 @@ $map: (
 			line-height: 2em;
 			background: {
 				image: image-url('social-icons/#{$icon}.svg');
-				size: 2em 2em;   
 				repeat: no-repeat;
+				size: 2em 2em;   
 			}
 			opacity: 1;
 			transition: opacity 0.15s ease-out;
