@@ -1,0 +1,32 @@
+// add social networks here:
+$map: (
+	twitter: icon-twitter,
+	facebook: icon-facebook,
+	google-plus: icon-google-plus,
+	youtube:  icon-youtube,
+	linkedin: icon-linkedin,
+);
+
+// loop through map items and assign icon
+.social-networks { 
+	@each $network, $icon in $map {
+		li.#{$network} a {
+			display: block;
+			margin: 0.5em 0;
+			height: 2em;
+			line-height: 2em;
+			background: {
+				image: image-url('social-icons/#{$icon}.svg');
+				size: 2em 2em;   
+				repeat: no-repeat;
+			}
+			opacity: 1;
+			transition: opacity 0.15s ease-out;
+
+			@include hocus {
+				transition: opacity 0.3s ease-in;
+				opacity: 0.8;
+			}
+		}
+	}
+}
