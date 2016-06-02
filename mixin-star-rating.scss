@@ -1,0 +1,18 @@
+// mixin for star ratings
+$star-width: 25px;
+
+.rating {
+	width: $star-width * 5;
+	height: $star-width;
+	background: {
+		image: url("stars.svg");
+		repeat:  no-repeat;
+		size: $star-width * 10 auto;		
+	}
+
+	@for $i from 0 through 5 {
+		&.rating-#{$i} {
+			background-position: -((5 - $i) * $star-width) 0;
+		}
+	}
+}
