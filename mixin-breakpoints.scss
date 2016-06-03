@@ -1,0 +1,26 @@
+$breakpoint-lg:       60em;
+$breakpoint-md:       50em;
+$breakpoint-sm:       30em;
+
+@mixin breakpoint($viewport) {
+        // large
+        @if $viewport == lg {
+                @media (min-width: $breakpoint-lg) { 
+                        @content; 
+                }
+        }
+        // medium
+        @else if $viewport == md {
+                @media (min-width: $breakpoint-md) { 
+                        @content; 
+                }
+        }
+        // small
+        @else if $viewport == sm {
+                @media (min-width: $breakpoint-sm)  {
+                        @content; 
+                }
+        }
+}
+
+// usage:  @include breakpoint(lg) { color: hotpink; }
