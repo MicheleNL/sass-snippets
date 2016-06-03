@@ -1,4 +1,4 @@
-// mixin for decorative dots and lines
+// mixin for decorative dots and lines - needs decent documentation when used
 @mixin dotted-line($color, $bg-color, $line-offset-y, $dot-offset-x, $dot-offset-y) {
 	&:before,
 	&:after {
