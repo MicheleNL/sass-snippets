@@ -1,0 +1,7 @@
+// mixin for automatically including focus styles with hover
+@mixin hocus {
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
