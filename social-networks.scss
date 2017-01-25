@@ -16,7 +16,7 @@ $map: (
 			height: 2em;
 			line-height: 2em;
 			background: {
-				image: image-url('social-icons/#{$icon}.svg');
+				image: url('social-icons/#{$icon}.svg');
 				repeat: no-repeat;
 				size: 2em 2em;
 			}
